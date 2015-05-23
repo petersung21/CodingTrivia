@@ -20,7 +20,7 @@ public class QuestionTest {
 					"Base class can not be instantiated only inherited from"));
 		}
 	}
-	public questions mixQuestions(){
+	public static questions mixQuestions(){
 		Collections.shuffle(allquestions);
 		return allquestions.get(0);
 	}
