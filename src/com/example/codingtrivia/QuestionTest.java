@@ -16,8 +16,8 @@ public class QuestionTest {
 	
 	public static void fillQuestions(){
         String url = "http://nodejs-devsung.rhcloud.com/mysql";
-        
-        aq.ajax(url, JSONObject.class, new AjaxCallback<JSONObject>() {
+        //Fix this REST call
+        /*aq.ajax(url, JSONObject.class, new AjaxCallback<JSONObject>() {
             @Override
             public void callback(String url, JSONObject json, AjaxStatus status) {                    
                 if(json != null){                              
@@ -28,7 +28,7 @@ public class QuestionTest {
                     Toast.makeText(aq.getContext(), "Error:" + status.getCode(), Toast.LENGTH_LONG).show();
                 }
             }
-        });
+        });*/
 		if (allquestions.size()<=3){
 			allquestions.add(new questions(0,"What is not a property of static classes", "Static classes can not be instantiated",
 					"You can access static methods without instantiating class","You can't override static methods", "You can have a lone static class",
