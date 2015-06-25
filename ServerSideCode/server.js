@@ -36,9 +36,7 @@ app.get('/mysql', function(req,res){
     if (err){
         res.send(err);
     }else {
-        for (i=0;i<rows.length;i++){
-            res.send(rows[1]);
-        }
+        res.send(rows[1]);
     }
     });
 });
